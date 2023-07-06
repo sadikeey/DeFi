@@ -1,6 +1,4 @@
-import { ICoinGeko } from "../types/api"
-
-const coins: ICoinGeko[] = [
+const coins: any = [
   {
     id: 'bitcoin',
     symbol: 'btc',

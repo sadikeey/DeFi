@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
 import { FiArrowDown, FiArrowUpRight } from 'react-icons/fi'
 // import { fetchCoinGecko } from '../services/api'
-import { ICoinGeko } from '../types/api'
 import coins from '../data/coins'
 
 const Featured = () => {
-  const [coin, setCoin] = useState<ICoinGeko[]>([])
+  const [coin, setCoin] = useState<any>([])
 
   useEffect(() => {
     const getCoinGecko = async (): Promise<void> => {
@@ -48,7 +47,7 @@ const Featured = () => {
           {!coin.length ? (
             <h1>Loading Coins...</h1>
           ) : (
-            coin.map((coin) => {
+            coin.map((coin: any) => {
               return (
                 <article
                   key={coin.id}

@@ -128,7 +128,6 @@ const MainScreen = () => {
       style={{
         backgroundColor: 'white',
         borderRadius: '6px',
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         padding: '1rem',
       }}
     >
@@ -160,7 +159,7 @@ const MainScreen = () => {
           Candlestick Chart
         </MainScreenTabButton>
       </div>
-      <div className='min-h-[400px]'>{content}</div>
+      <div className='min-h-[600px]'>{content}</div>
     </div>
   )
 }
